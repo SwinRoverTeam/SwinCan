@@ -1,6 +1,7 @@
 #ifndef SWIN_CAN_H_
 #define SWIN_CAN_H_
 #include <mcp_can.h>
+#include "Arduino.h"
 
 
 enum NodeClass {
