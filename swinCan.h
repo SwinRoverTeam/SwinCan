@@ -13,7 +13,7 @@ enum NodeClass {
 
 enum cmd_type {
 	heart_beat = 0x01,
-	drive_motor = 0x024,
+	drive_motor = 0x02,
 	set_relay = 0x03,
 	set_arm = 0x04
 };
@@ -24,7 +24,8 @@ enum ArmClass {
     seg2Pitch = 0x3,
     wristPitch = 0x4,
     wristRoll = 0x5,
-    gripper = 0x6
+    gripper = 0x6,
+	rfid = 0x7
 };
 
 void heartbeat(int id, MCP_CAN canObj);
